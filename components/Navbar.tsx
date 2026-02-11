@@ -12,6 +12,7 @@ export default function Navbar() {
   const menus = [
     { name: 'Home', path: '/' },
     { name: 'Gallery', path: '/gallery' },
+    { name: 'Projects', path: '/projects' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -41,25 +42,29 @@ export default function Navbar() {
         <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`}>
           <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white font-medium">
             {menus.map((item) => {
-              // Logika pengecekan link aktif
-              const isActive = pathname === item.path;
+  // Logika baru: 
+  // 1. Kalau Home ('/'), harus exact match agar tidak aktif di semua halaman.
+  // 2. Kalau menu lain, cek apakah pathname dimulai dengan path menu tersebut.
+  const isActive = item.path === '/' 
+    ? pathname === '/' 
+    : pathname.startsWith(item.path);
 
-              return (
-                <li key={item.path}>
-                  <Link 
-                    href={item.path} 
-                    className={`block py-2 px-3 transition-colors duration-200 rounded md:p-0 ${
-                      isActive 
-                        ? "text-blue-700 font-bold bg-blue-50 md:bg-transparent md:text-blue-700 underline underline-offset-8 decoration-2" 
-                        : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
-                    }`}
-                    onClick={() => setIsOpen(false)} // Menutup menu otomatis di mobile setelah klik
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              );
-            })}
+  return (
+    <li key={item.path}>
+      <Link 
+        href={item.path} 
+        className={`block py-2 px-3 transition-colors duration-200 rounded md:p-0 ${
+          isActive 
+            ? "text-blue-700 font-bold bg-blue-50 md:bg-transparent md:text-blue-700 underline underline-offset-8 decoration-2" 
+            : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
+        }`}
+        onClick={() => setIsOpen(false)}
+      >
+        {item.name}
+      </Link>
+    </li>
+  );
+})}
           </ul>
         </div>
       </div>

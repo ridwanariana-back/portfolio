@@ -14,14 +14,15 @@ interface GalleryItem {
 
 // 2. Data Galeri (Ganti src dengan path foto kamu)
 const galleryData: GalleryItem[] = [
-  { id: 1, title: 'Java Programming Training', src: '/certificate/1.jpg', category: 'Certificate' },
-  { id: 2, title: 'English Soft Skill Training', src: '/certificate/2.jpg', category: 'Certificate' },
-  { id: 3, title: 'Java Fundamental Course By Oracle', src: '/certificate/3.jpg', category: 'Certificate' },
-  { id: 4, title: 'Java Programming Course By Oracle', src: '/certificate/4.jpg', category: 'Certificate' },
-  { id: 5, title: 'Training on Managing Numeric Data Using Microsoft Excel (Including Macros and Pivot Table)', src: '/certificate/5.jpg', category: 'Certificate' },
-  { id: 6, title: 'Appreciation for Completing the Microsoft Excel Course (If, Macro, and Pivot Table)', src: '/certificate/6.jpg', category: 'Certificate' },
-  { id: 7, title: 'Html and CSS Course Completion', src: '/certificate/7.jpg', category: 'Certificate' },
-  { id: 8, title: 'Attendance of IDCamp Alumni Dialogue #1 - Unlocking Your Potential: Personal Development In Tech', src: '/certificate/8.jpg', category: 'Certificate' },
+  { id: 1, title: 'Next.js App Router Fundamentals By Vercel', src: '/certificate/9.jpg', category: 'Certificate' },
+  { id: 2, title: 'Java Programming Training', src: '/certificate/1.jpg', category: 'Certificate' },
+  { id: 3, title: 'English Soft Skill Training', src: '/certificate/2.jpg', category: 'Certificate' },
+  { id: 4, title: 'Java Fundamental Course By Oracle', src: '/certificate/3.jpg', category: 'Certificate' },
+  { id: 5, title: 'Java Programming Course By Oracle', src: '/certificate/4.jpg', category: 'Certificate' },
+  { id: 6, title: 'Training on Managing Numeric Data Using Microsoft Excel (Including Macros and Pivot Table)', src: '/certificate/5.jpg', category: 'Certificate' },
+  { id: 7, title: 'Appreciation for Completing the Microsoft Excel Course (If, Macro, and Pivot Table)', src: '/certificate/6.jpg', category: 'Certificate' },
+  { id: 8, title: 'Html and CSS Course Completion', src: '/certificate/7.jpg', category: 'Certificate' },
+  { id: 9, title: 'Attendance of IDCamp Alumni Dialogue #1 - Unlocking Your Potential: Personal Development In Tech', src: '/certificate/8.jpg', category: 'Certificate' },
 ];
 
 export default function GalleryPage() {

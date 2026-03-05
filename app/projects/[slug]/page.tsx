@@ -25,7 +25,7 @@ const projectsData: Record<string, any> = {
     title: "WorldCulinary",
     description: "A streamlined recipe discovery platform featuring smart search and curated global food categories.",
     fullDescription: "WorldCulinary is a web application designed to help users find food and drink recipes from around the globe instantly. Built with a focus on speed and accessibility, it provides a clean interface for exploring diverse culinary inspirations, from main courses to signature cocktails.",
-    image: "/projects/worldculinary-hero.png",
+    image: "/projects/worldculinary.PNG",
     github: "https://github.com/ridwanariana-back/worldculinary",
     demo: "https://worldculinary.vercel.app",
     tags: ["Next.js", "Tailwind CSS", "MealDB API", "Lucide Icons", "Responsive Design"],

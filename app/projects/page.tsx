@@ -18,7 +18,7 @@ const projects = [
     image: "/projects/worldculinary.PNG", // Ganti dengan path gambarmu
     tags: ["Next.js", "Food & Drink", "API"],
     slug: "worldculinary",
-    color: "bg-orange-500/10 text-orange-600"
+    color: "bg-emerald-500/10 text-emerald-600"
   }
 ];
 

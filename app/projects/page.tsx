@@ -11,6 +11,14 @@ const projects = [
     tags: ["Next.js", "Biology", "API"],
     slug: "bioexplorer",
     color: "bg-emerald-500/10 text-emerald-600"
+  },
+  {
+    title: "WorldCulinary",
+    description: "Find food & drink recipes from around the world.",
+    image: "/projects/worldculinary-hero.png", // Ganti dengan path gambarmu
+    tags: ["Next.js", "Food & Drink", "API"],
+    slug: "worldculinary",
+    color: "bg-orange-500/10 text-orange-600"
   }
 ];
 

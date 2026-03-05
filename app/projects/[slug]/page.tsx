@@ -21,6 +21,22 @@ const projectsData: Record<string, any> = {
     ],
     challenge: "The main challenge was rendering thousands of species data sets without degrading application performance. I addressed this by implementing efficient Server-side Rendering (SSR) and Pagination."
   },
+  "worldculinary": {
+    title: "WorldCulinary",
+    description: "A streamlined recipe discovery platform featuring smart search and curated global food categories.",
+    fullDescription: "WorldCulinary is a web application designed to help users find food and drink recipes from around the globe instantly. Built with a focus on speed and accessibility, it provides a clean interface for exploring diverse culinary inspirations, from main courses to signature cocktails.",
+    image: "/projects/worldculinary-hero.png",
+    github: "https://github.com/ridwanariana-back/worldculinary",
+    demo: "https://worldculinary.vercel.app",
+    tags: ["Next.js", "Tailwind CSS", "MealDB API", "Lucide Icons", "Responsive Design"],
+    features: [
+      "Real-time Recipe Search with Autocomplete",
+      "Curated Popular Categories (Beef, Chicken, Cocktails, etc.)",
+      "Comprehensive Recipe Instructions & Ingredients",
+      "Fully Responsive UI for Mobile Cooking"
+    ],
+    challenge: "The main challenge was handling asynchronous data fetching to ensure the autocomplete search felt instantaneous. I implemented optimized API calling and state management to prevent lag during user input."
+  },
   // Kamu bisa tambah data project lain di sini dengan slug sebagai key
 };
 

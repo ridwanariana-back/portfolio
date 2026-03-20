@@ -41,7 +41,7 @@ const projectsData: Record<string, any> = {
     title: "CVGenerator",
     description: "A professional resume builder designed to help job seekers create polished, ATS-friendly CVs in minutes.",
     fullDescription: "CVGenerator is a specialized web tool that simplifies the resume-building process. It allows users to input their professional details—from work experience to technical skills—and instantly transforms them into a structured, print-ready document. Built for modern job seekers, it ensures consistency and professional formatting without the hassle of manual design.",
-    image: "/projects/cvgenerator.PNG",
+    image: "/projects/cvgenerator.png",
     github: "https://github.com/ridwanariana-back/cvgenerator", // Sesuaikan dengan repo aslimu
     demo: "https://cvgenerator-mu.vercel.app",
     tags: ["Next.js", "Tailwind CSS", "React Hooks", "Google Auth", "Supabase API", "PDF Generation", "Responsive UI"],

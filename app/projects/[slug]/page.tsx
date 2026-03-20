@@ -37,6 +37,22 @@ const projectsData: Record<string, any> = {
     ],
     challenge: "The main challenge was handling asynchronous data fetching to ensure the autocomplete search felt instantaneous. I implemented optimized API calling and state management to prevent lag during user input."
   },
+  "cvgenerator": {
+    title: "CVGenerator",
+    description: "A professional resume builder designed to help job seekers create polished, ATS-friendly CVs in minutes.",
+    fullDescription: "CVGenerator is a specialized web tool that simplifies the resume-building process. It allows users to input their professional details—from work experience to technical skills—and instantly transforms them into a structured, print-ready document. Built for modern job seekers, it ensures consistency and professional formatting without the hassle of manual design.",
+    image: "/projects/cvgenerator.PNG",
+    github: "https://github.com/ridwanariana-back/cvgenerator", // Sesuaikan dengan repo aslimu
+    demo: "https://cvgenerator-mu.vercel.app",
+    tags: ["Next.js", "Tailwind CSS", "React Hooks", "Google Auth", "Supabase API", "PDF Generation", "Responsive UI"],
+    features: [
+      "Dynamic Data Binding (Live Preview as you type)",
+      "Automated PDF Generation and Download",
+      "Interactive Forms for Experience, Education, and Skills",
+      "Clean, Minimalist, and ATS-Friendly Templates"
+    ],
+    challenge: "The primary challenge was ensuring the layout remained consistent between the web preview and the generated PDF file. I overcame this by using specialized CSS media queries for print and optimizing the data flow to handle multiple sections dynamically."
+  }
   // Kamu bisa tambah data project lain di sini dengan slug sebagai key
 };
 

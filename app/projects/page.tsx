@@ -19,7 +19,16 @@ const projects = [
     tags: ["Next.js", "Food & Drink", "API"],
     slug: "worldculinary",
     color: "bg-emerald-500/10 text-emerald-600"
+  },
+  {
+    title: "CVGenerator",
+    description: "Create your Professional Resume. Build an ATS-ready CV with minimalist designs. Focus on your expertise, and let us handle the aesthetics for you.",
+    image: "/projects/cvgenerator.png", // Ganti dengan path gambarmu
+    tags: ["Next.js", "CV", "Supabase API", "Google Auth"],
+    slug: "cvgenerator",
+    color: "bg-emerald-500/10 text-emerald-600"
   }
+  
 ];
 
 export default function ProjectsPage() {

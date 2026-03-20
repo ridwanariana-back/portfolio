@@ -14,13 +14,13 @@ export default function Home() {
         <div className="md:w-1/2 text-lg text-gray-700 leading-relaxed">
           <h1 className="text-4xl font-bold text-center mb-10 text-gray-800">Let me introduce myself, I am Ridwan Ariana</h1>
           <p className="mb-4">
-            Welcome to my portfolio. I am competent, tenacious, adaptable, and always eager to learn new things. I am a graduate of Information Systems from Sriwijaya University, Indralaya, Ogan Ilir, South Sumatra Province.
+            Welcome to my portfolio! I am a System Information graduate from Sriwijaya University with a strong foundation in building web-based systems.
           </p>
           <p className="mb-4">
-            I understand how to create web-based information systems using programming languages ​​such as React (next.js).And I also understand how to use office applications such as MS Word, MS Excel, and others.
+            I specialize in React (Next.js) and am highly proficient in essential productivity tools like MS Office.
           </p>
           <p>
-            With this, I have great hopes of being able to work together with all of you.
+            As a tenacious and adaptable professional, I am always eager to embrace new challenges and contribute my technical skills to a collaborative team.
           </p>
         </div>
 

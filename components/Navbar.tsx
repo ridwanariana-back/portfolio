@@ -8,7 +8,6 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
-  // Daftar menu yang konsisten
   const menus = [
     { name: 'Home', path: '/' },
     { name: 'Gallery', path: '/gallery' },
@@ -18,16 +17,18 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-white border-b border-gray-200 fixed w-full z-20 top-0 start-0">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link href="/" className="text-2xl font-bold text-blue-600">
+    <nav className="bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80 fixed w-full z-50 top-0 start-0">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
+        
+        {/* Logo Bercahaya */}
+        <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent tracking-wide">
           Portfolio
         </Link>
 
         {/* Tombol Hamburger (Mobile) */}
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 w-10 h-10 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none"
+          className="md:hidden p-2 w-10 h-10 text-slate-300 rounded-lg bg-slate-900 border border-slate-800 hover:bg-slate-800 focus:outline-none"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {isOpen ? (
@@ -40,31 +41,28 @@ export default function Navbar() {
 
         {/* Menu Items */}
         <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`}>
-          <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white font-medium">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 border border-slate-800 rounded-xl bg-slate-900/90 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent font-medium">
             {menus.map((item) => {
-  // Logika baru: 
-  // 1. Kalau Home ('/'), harus exact match agar tidak aktif di semua halaman.
-  // 2. Kalau menu lain, cek apakah pathname dimulai dengan path menu tersebut.
-  const isActive = item.path === '/' 
-    ? pathname === '/' 
-    : pathname.startsWith(item.path);
+              const isActive = item.path === '/' 
+                ? pathname === '/' 
+                : pathname.startsWith(item.path);
 
-  return (
-    <li key={item.path}>
-      <Link 
-        href={item.path} 
-        className={`block py-2 px-3 transition-colors duration-200 rounded md:p-0 ${
-          isActive 
-            ? "text-blue-700 font-bold bg-blue-50 md:bg-transparent md:text-blue-700 underline underline-offset-8 decoration-2" 
-            : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
-        }`}
-        onClick={() => setIsOpen(false)}
-      >
-        {item.name}
-      </Link>
-    </li>
-  );
-})}
+              return (
+                <li key={item.path}>
+                  <Link 
+                    href={item.path} 
+                    className={`block py-2 px-3 transition-all duration-200 rounded-md md:p-0 ${
+                      isActive 
+                        ? "text-cyan-400 font-semibold bg-cyan-500/10 md:bg-transparent underline underline-offset-8 decoration-2 decoration-cyan-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]" 
+                        : "text-slate-300 hover:text-cyan-300 hover:bg-slate-800/50 md:hover:bg-transparent"
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
